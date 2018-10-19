@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OHGBabysitterKata", "OHGBabysitterKata\OHGBabysitterKata.csproj", "{1931A04A-024D-46E9-BF15-D257CA58C920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OHGBabysitterKata.Tests", "OHGBabysitterKata.Tests\OHGBabysitterKata.Tests.csproj", "{703220D2-B650-4B46-8997-44023E6670E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1931A04A-024D-46E9-BF15-D257CA58C920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1931A04A-024D-46E9-BF15-D257CA58C920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1931A04A-024D-46E9-BF15-D257CA58C920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1931A04A-024D-46E9-BF15-D257CA58C920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703220D2-B650-4B46-8997-44023E6670E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703220D2-B650-4B46-8997-44023E6670E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703220D2-B650-4B46-8997-44023E6670E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703220D2-B650-4B46-8997-44023E6670E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8009B920-8102-44F5-B60C-84BCC6FF4590}
+	EndGlobalSection
+EndGlobal
