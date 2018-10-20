@@ -16,20 +16,33 @@ namespace OHGBabysitterKata.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void GetCharge_WithBedtimeAndTimePastMidnight()
+        public void GetCharge_NoBedtimeNoTimePastMidnight()
         {
             // Arrange with a checkin of 6PM, checkout of 1AM, and a bedtime of 9PM
             BabysitterTime babysitterTime = new BabysitterTime();
-            babysitterTime.CheckIn = new DateTime();
-            babysitterTime.CheckOut = new DateTime();
-            babysitterTime.Bedtime = new DateTime();
-            babysitterTime.CheckIn.AddHours(18);
-            babysitterTime.CheckOut.AddHours(1);
-            babysitterTime.Bedtime.AddHours(21);
+            babysitterTime.CheckIn = DateTime.Today.AddHours(18);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(23);
 
             TimeCalcController controller = new TimeCalcController();
             var result = controller.GetNightlyCharge(babysitterTime);
 
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(result, 60.0M);
+        }
+
+        [TestMethod]
+        public void GetCharge_WithBedtimeAndTimePastMidnight()
+        {
+            // Arrange with a checkin of 6PM, checkout of 1AM, and a bedtime of 9PM
+            BabysitterTime babysitterTime = new BabysitterTime();
+            babysitterTime.CheckIn = DateTime.Today.AddHours(18);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(1);
+            babysitterTime.Bedtime = DateTime.Today.AddHours(21);
+
+            TimeCalcController controller = new TimeCalcController();
+            var result = controller.GetNightlyCharge(babysitterTime);
+            
             // Assert
             Assert.IsNotNull(result);
             Assert.AreEqual(result, 120.0M);
@@ -40,12 +53,9 @@ namespace OHGBabysitterKata.Tests.Controllers
         {
             // Arrange with a checkin of 6PM, checkout of 11PM, and a bedtime of 9PM
             BabysitterTime babysitterTime = new BabysitterTime();
-            babysitterTime.CheckIn = new DateTime();
-            babysitterTime.CheckOut = new DateTime();
-            babysitterTime.Bedtime = new DateTime();
-            babysitterTime.CheckIn.AddHours(18);
-            babysitterTime.CheckOut.AddHours(23);
-            babysitterTime.Bedtime.AddHours(21);
+            babysitterTime.CheckIn = DateTime.Today.AddHours(18);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(23);
+            babysitterTime.Bedtime = DateTime.Today.AddHours(21);
 
             TimeCalcController controller = new TimeCalcController();
             var result = controller.GetNightlyCharge(babysitterTime);
@@ -60,10 +70,8 @@ namespace OHGBabysitterKata.Tests.Controllers
         {
             // Arrange with a checkin of 6PM, checkout of 1AM, and no bedtime set
             BabysitterTime babysitterTime = new BabysitterTime();
-            babysitterTime.CheckIn = new DateTime();
-            babysitterTime.CheckOut = new DateTime();
-            babysitterTime.CheckIn.AddHours(18);
-            babysitterTime.CheckOut.AddHours(1);
+            babysitterTime.CheckIn = DateTime.Today.AddHours(18);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(1);
 
             TimeCalcController controller = new TimeCalcController();
             var result = controller.GetNightlyCharge(babysitterTime);
@@ -77,12 +85,10 @@ namespace OHGBabysitterKata.Tests.Controllers
         {
             // Arrange with a checkin of 4PM, checkout of 12AM, and a bedtime of 9PM
             BabysitterTime babysitterTime = new BabysitterTime();
-            babysitterTime.CheckIn = new DateTime();
-            babysitterTime.CheckOut = new DateTime();
-            babysitterTime.Bedtime = new DateTime();
-            babysitterTime.CheckIn.AddHours(16);
-            babysitterTime.CheckOut.AddHours(0);
-            babysitterTime.Bedtime.AddHours(21);
+
+            babysitterTime.CheckIn = DateTime.Today.AddHours(16);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(0);
+            babysitterTime.Bedtime = DateTime.Today.AddHours(21);
 
             TimeCalcController controller = new TimeCalcController();
             var result = controller.GetNightlyCharge(babysitterTime);
@@ -96,12 +102,9 @@ namespace OHGBabysitterKata.Tests.Controllers
         {
             // Arrange with a checkin of 6PM, checkout of 5AM, and a bedtime of 9PM
             BabysitterTime babysitterTime = new BabysitterTime();
-            babysitterTime.CheckIn = new DateTime();
-            babysitterTime.CheckOut = new DateTime();
-            babysitterTime.Bedtime = new DateTime();
-            babysitterTime.CheckIn.AddHours(18);
-            babysitterTime.CheckOut.AddHours(5);
-            babysitterTime.Bedtime.AddHours(21);
+            babysitterTime.CheckIn = DateTime.Today.AddHours(18);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(5);
+            babysitterTime.Bedtime = DateTime.Today.AddHours(21);
 
             TimeCalcController controller = new TimeCalcController();
             var result = controller.GetNightlyCharge(babysitterTime);
