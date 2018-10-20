@@ -28,7 +28,7 @@ namespace OHGBabysitterKata.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(result, 60.0M);
+            Assert.AreEqual(60.0M, result);
         }
 
         [TestMethod]
@@ -45,7 +45,7 @@ namespace OHGBabysitterKata.Tests.Controllers
             
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(result, 120.0M);
+            Assert.AreEqual(76.0M, result);
         }
 
         [TestMethod]
@@ -62,7 +62,7 @@ namespace OHGBabysitterKata.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(result, 104.0M);
+            Assert.AreEqual(52.0M, result);
         }
 
         [TestMethod]
@@ -78,9 +78,10 @@ namespace OHGBabysitterKata.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(result, 88.0M);
+            Assert.AreEqual(88.0M, result);
         }
 
+        [TestMethod]
         public void GetCharge_CheckInTooEarlyWithBedTime()
         {
             // Arrange with a checkin of 4PM, checkout of 12AM, and a bedtime of 9PM
@@ -95,9 +96,10 @@ namespace OHGBabysitterKata.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(result, 60.0M);
+            Assert.AreEqual(72.0M, result);
         }
 
+        [TestMethod]
         public void GetCharge_CheckOutTooLateWithBedTime()
         {
             // Arrange with a checkin of 6PM, checkout of 5AM, and a bedtime of 9PM
@@ -111,7 +113,7 @@ namespace OHGBabysitterKata.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(result, 124.0M);
+            Assert.AreEqual(124.0M, result);
         }
 
         [TestMethod]

@@ -26,15 +26,13 @@ namespace OHGBabysitterKata.Controllers
             //Eliminate the extra hours before 5PM
             if (BTimeObj.CheckIn < startTime && BTimeObj.CheckIn > endTime)
             {
-                BTimeObj.CheckIn = DateTime.Today;
-                BTimeObj.CheckIn.AddHours(17);
+                BTimeObj.CheckIn = startTime;
             }
 
             //Eliminate the extra hours after 4AM
             if (BTimeObj.CheckOut > endTime && BTimeObj.CheckOut < startTime)
             {
-                BTimeObj.CheckOut = DateTime.Today;
-                BTimeObj.CheckOut.AddHours(4);
+                BTimeObj.CheckOut = endTime;
             }
             
             nightlyCharge = Calculate(BTimeObj);
@@ -73,7 +71,7 @@ namespace OHGBabysitterKata.Controllers
             if (BTimeObj.Bedtime >= startTime && BTimeObj.Bedtime.Hour <= lastHourOfDay)
             {
                 hoursBeforeBedTime = BTimeObj.Bedtime.Hour - BTimeObj.CheckIn.Hour;
-                hoursAfterBedTime = lastHourOfDay = BTimeObj.Bedtime.Hour;
+                hoursAfterBedTime = lastHourOfDay - BTimeObj.Bedtime.Hour;
             }
             else
             {
