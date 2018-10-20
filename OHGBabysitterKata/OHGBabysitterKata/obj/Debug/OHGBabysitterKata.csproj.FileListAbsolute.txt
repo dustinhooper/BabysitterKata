@@ -90,8 +90,8 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.AI.Web.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.csprojAssemblyReference.cache
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.csproj.CoreCompileInputs.cache
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.csproj.CopyComplete
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.pdb
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.csprojAssemblyReference.cache
