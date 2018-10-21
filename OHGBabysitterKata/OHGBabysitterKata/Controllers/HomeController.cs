@@ -24,7 +24,7 @@ namespace OHGBabysitterKata.Controllers
 
         public async Task<ActionResult> Index(BabysitterTime BtObj)
         {
-            apiUrl = Request.Url.ToString() + "api/TimeCalc";
+            apiUrl = "http://" + Request.Url.Host + ":" + Request.Url.Port + "/api/TimeCalc";
             client = new HttpClient();
             client.BaseAddress = new Uri(apiUrl);
             client.DefaultRequestHeaders.Accept.Clear();
