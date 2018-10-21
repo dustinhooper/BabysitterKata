@@ -34,16 +34,16 @@ namespace OHGBabysitterKata.Controllers
 
             string responseData = response.Content.ReadAsStringAsync().Result;
 
-            decimal chargeTotal = JsonConvert.DeserializeObject<decimal>(responseData);
+            //decimal chargeTotal = JsonConvert.DeserializeObject<decimal>(responseData);
 
             if (response.IsSuccessStatusCode)
             {
-
+                BtObj.NightlyCharge = JsonConvert.DeserializeObject<decimal>(responseData);
                 ViewBag.ErrorMsg = "";
             }
             else
             {
-                ViewBag.ErrorMsg = "Could not calculate.";
+                ViewBag.ErrorMsg = "Could not calculate: " + response.StatusCode.ToString();
             }
 
             return View(BtObj);

@@ -20,7 +20,7 @@ namespace OHGBabysitterKata.Controllers
             decimal nightlyCharge = 0.0M;
 
             //If the CheckIn or CheckOut times are less than today, they are likely not initialized
-            if(BTimeObj.CheckIn < DateTime.Today || BTimeObj.CheckOut < DateTime.Today)
+            if (BTimeObj.CheckIn < DateTime.Today || BTimeObj.CheckOut < DateTime.Today)
             {
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
             }

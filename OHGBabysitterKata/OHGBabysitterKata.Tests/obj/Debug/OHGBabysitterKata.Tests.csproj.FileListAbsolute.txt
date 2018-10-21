@@ -40,3 +40,12 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\obj\Debug\OHGBabysitterKata.Tests.csproj.CopyComplete
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\obj\Debug\OHGBabysitterKata.Tests.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\obj\Debug\OHGBabysitterKata.Tests.pdb
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\Castle.Core.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\Moq.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\System.ValueTuple.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\Castle.Core.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\Moq.pdb
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\Moq.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata.Tests\bin\Debug\System.ValueTuple.xml

@@ -1,33 +1,36 @@
-﻿@{
+﻿@model OHGBabysitterKata.Models.BabysitterTime
+@{
     ViewBag.Title = "Home Page";
 }
 
-<input type="time" id="CheckInTime" />
+@using (Html.BeginForm())
+{
+    <br />
+    <div class="form-group">
+        <div class="col-md-2">
+            <strong>Check In Time</strong>
+            @Html.TextBoxFor(model => model.CheckIn, new { @type = "time", @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            <strong>Check Out Time</strong>
+            @Html.TextBoxFor(model => model.CheckOut, new { @type = "time", @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            <strong>Bed Time</strong>
+            @Html.TextBoxFor(model => model.Bedtime, new { @type = "time", @class = "form-control" })
+        </div>
+        <div class="col-md-1">
+            <input type="submit" value="Calculate" class="btn btn-default" />
+        </div>
+        <div class="col-md-4">
+            @if (Model != null && String.IsNullOrEmpty(ViewBag.ErrorMsg))
+            {
+                @Html.Raw("<strong>Nightly Charges:</strong> " + Model.NightlyCharge.ToString() + "</span>");
+            }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+            @Html.Raw("<span style='color:red;'>" + ViewBag.ErrorMsg + "</span>")
+        </div>
+    </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    
+}
