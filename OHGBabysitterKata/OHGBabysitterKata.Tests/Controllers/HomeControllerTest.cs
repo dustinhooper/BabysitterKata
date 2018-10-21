@@ -9,6 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OHGBabysitterKata;
 using OHGBabysitterKata.Models;
 using OHGBabysitterKata.Controllers;
+using System.Threading.Tasks;
 
 namespace OHGBabysitterKata.Tests.Controllers
 {
@@ -158,6 +159,23 @@ namespace OHGBabysitterKata.Tests.Controllers
                 // Assert
                 Assert.AreEqual(ex.Response.StatusCode, HttpStatusCode.BadRequest);
             }
+        }
+
+        [TestMethod]
+        public async Task Index_GetValidCalculation()
+        {
+            // Arrange with a checkin 6PM, checkout not initialized, and a bedtime of 9PM
+            BabysitterTime babysitterTime = new BabysitterTime();
+            babysitterTime.CheckIn = DateTime.Today.AddHours(18);
+            babysitterTime.CheckOut = DateTime.Today.AddHours(23);
+            babysitterTime.Bedtime = DateTime.Today.AddHours(21);
+
+            HomeController controller = new HomeController();
+            var result = await controller.Index(babysitterTime);
+            Assert.IsNotNull(result);
+
+            var btModel = (BabysitterTime)((ViewResult)result).Model;
+            Assert.AreEqual(52.0M, btModel.NightlyCharge);
         }
     }
 }
