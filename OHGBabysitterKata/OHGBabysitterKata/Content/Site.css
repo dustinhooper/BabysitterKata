@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.textbox-divs{
+    padding-top:10px;
+}
+
+.button-div{
+    padding-top:30px;
+}
+
+.response-div {
+    padding: 35px 0px 0px 30px;
+}

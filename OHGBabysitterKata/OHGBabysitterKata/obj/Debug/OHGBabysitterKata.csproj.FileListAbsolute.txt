@@ -49,6 +49,7 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\roslyn\VBCSCompiler.exe
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Antlr3.Runtime.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Castle.Core.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -59,9 +60,12 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Moq.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Newtonsoft.Json.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Net.Http.Formatting.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.ValueTuple.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Helpers.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Http.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Http.WebHost.dll
@@ -72,6 +76,12 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.WebPages.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.WebPages.Razor.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\WebGrease.dll
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Castle.Core.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Moq.pdb
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Moq.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Newtonsoft.Json.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.ValueTuple.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Helpers.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Mvc.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Optimization.xml
@@ -79,7 +89,6 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.WebPages.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.WebPages.Deployment.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.WebPages.Razor.xml
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Newtonsoft.Json.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Antlr3.Runtime.pdb
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Net.Http.Formatting.xml
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Web.Http.xml
@@ -94,12 +103,3 @@ C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.csproj.CopyComplete
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.dll
 C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\obj\Debug\OHGBabysitterKata.pdb
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Castle.Core.dll
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Moq.dll
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Threading.Tasks.Extensions.dll
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.ValueTuple.dll
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Castle.Core.xml
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Moq.pdb
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\Moq.xml
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.Threading.Tasks.Extensions.xml
-C:\Users\dustin\Source\Repos\BabysitterKata\OHGBabysitterKata\OHGBabysitterKata\bin\System.ValueTuple.xml

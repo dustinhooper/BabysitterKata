@@ -7,28 +7,28 @@
 {
     <br />
     <div class="form-group">
-        <div class="col-md-2">
+        <div class="col-md-2 textbox-divs">
             <strong>Check In Time</strong>
             @Html.TextBoxFor(model => model.CheckIn, new { @type = "time", @class = "form-control" })
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 textbox-divs">
             <strong>Check Out Time</strong>
             @Html.TextBoxFor(model => model.CheckOut, new { @type = "time", @class = "form-control" })
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 textbox-divs">
             <strong>Bed Time</strong>
             @Html.TextBoxFor(model => model.Bedtime, new { @type = "time", @class = "form-control" })
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 button-div">
             <input type="submit" value="Calculate" class="btn btn-default" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 response-div">
             @if (Model != null && String.IsNullOrEmpty(ViewBag.ErrorMsg))
             {
-                @Html.Raw("<strong>Nightly Charges:</strong> " + Model.NightlyCharge.ToString() + "</span>");
+                @Html.Raw("<strong>Nightly Charges:</strong> " + Model.NightlyCharge.ToString());
             }
 
-            @Html.Raw("<span style='color:red;'>" + ViewBag.ErrorMsg + "</span>")
+            @Html.Raw("<span style='color:red; margin-left:30px'>" + ViewBag.ErrorMsg + "</span>")
         </div>
     </div>
 
