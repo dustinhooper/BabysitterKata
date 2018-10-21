@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 using OHGBabysitterKata.Models;
 
@@ -13,6 +14,7 @@ namespace OHGBabysitterKata.Controllers
         readonly DateTime startTime = DateTime.Today.AddHours(17);//5PM
         readonly DateTime endTime = DateTime.Today.AddHours(4);//4AM
 
+        [HttpPost]
         public decimal GetNightlyCharge(BabysitterTime BTimeObj)
         {
             decimal nightlyCharge = 0.0M;
@@ -48,11 +50,6 @@ namespace OHGBabysitterKata.Controllers
             int hoursBeforeBedTime = 0;
             int hoursAfterBedTime = 0;
             int hoursAfterMidnight = 0;
-
-            decimal beforeBedCharge = 0.0M;
-            decimal beforeMidnightCharge = 0.0M;
-            decimal afterMidnightCharge = 0.0M;
-            decimal chargeTotal = 0.0M;
 
             //Get the number of hours afte midnight, if any,
             //and set the lastHourOfDay, to simplify future math

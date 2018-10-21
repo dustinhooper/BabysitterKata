@@ -18,5 +18,7 @@ namespace OHGBabysitterKata.Models
         public DateTime CheckOut { get; set; }
 
         public DateTime Bedtime { get; set; }
+
+        public Decimal NightlyCharge { get; set; }
     }
 }
